@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What does AI stand for?",
+    "options": ["Artificial Intelligence", "Automatic Input", "Advanced Internet", "Active Innovation"],
+    "answer": "Artificial Intelligence"
+  },
+  {
+    "id": 2,
+    "question": "Which of these is an AI chat tool?",
+    "options": ["Siri", "Alexa", "ChatGPT", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 3,
+    "question": "What is the hidden cost of using free AI tools?",
+    "options": ["Your data", "Extra money", "No risks", "More ads"],
+    "answer": "Your data"
+  },
+  {
+    "id": 4,
+    "question": "What happened in Samsung’s AI data leak case?",
+    "options": ["They leaked internal code via ChatGPT", "They lost phones", "They hacked Google", "They deleted servers"],
+    "answer": "They leaked internal code via ChatGPT"
+  },
+  {
+    "id": 5,
+    "question": "Which of these is stored as data in AI tools?",
+    "options": ["Chats", "Notes", "Images", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "id": 6,
+    "question": "Deepfakes are mainly used to:",
+    "options": ["Create fake videos/images", "Improve eyesight", "Enhance battery life", "Fix devices"],
+    "answer": "Create fake videos/images"
+  },
+  {
+    "id": 7,
+    "question": "What is phishing?",
+    "options": ["Fishing in a river", "Tricking users into giving details", "Free online shopping", "Sharing memes"],
+    "answer": "Tricking users into giving details"
+  },
+  {
+    "id": 8,
+    "question": "Which browser is commonly used to access the Dark Web?",
+    "options": ["Chrome", "Firefox", "TOR", "Safari"],
+    "answer": "TOR"
+  },
+  {
+    "id": 9,
+    "question": "Why was the TOR network originally developed?",
+    "options": ["For online gaming", "For military communication", "For e-commerce", "For AI experiments"],
+    "answer": "For military communication"
+  },
+  {
+    "id": 10,
+    "question": "Which of these is an example of a Dark Web marketplace?",
+    "options": ["Amazon", "Silk Road", "Flipkart", "eBay"],
+    "answer": "Silk Road"
+  },
+  {
+    "id": 11,
+    "question": "What type of scams can deepfakes be used for?",
+    "options": ["Weather updates", "Fitness training", "Ransom calls", "Shopping discounts"],
+    "answer": "Ransom calls"
+  },
+  {
+    "id": 12,
+    "question": "What is online gambling mainly about?",
+    "options": ["Betting on sports/games", "Watching cricket", "Studying online", "Shopping"],
+    "answer": "Betting on sports/games"
+  },
+  {
+    "id": 13,
+    "question": "Why is gambling attractive?",
+    "options": ["Health benefits", "Thrill & easy money illusion", "Free education", "Better jobs"],
+    "answer": "Thrill & easy money illusion"
+  },
+  {
+    "id": 14,
+    "question": "What is the reality of gambling?",
+    "options": ["Most people win", "Most people lose", "Everyone gets rich", "Government pays"],
+    "answer": "Most people lose"
+  },
+  {
+    "id": 15,
+    "question": "Which gambling sites are banned in India?",
+    "options": ["Betway, Dafabet, Parimatch, Mahadev Book", "YouTube, WhatsApp", "Netflix, Prime", "Google, Apple"],
+    "answer": "Betway, Dafabet, Parimatch, Mahadev Book"
+  },
+  {
+    "id": 16,
+    "question": "Why were gambling sites banned?",
+    "options": ["Addiction, fraud, money laundering", "Free education", "Health issues", "Better jobs"],
+    "answer": "Addiction, fraud, money laundering"
+  },
+  {
+    "id": 17,
+    "question": "Which cyber risk is linked to gambling apps?",
+    "options": ["Malware stealing OTPs", "Better battery", "Extra health", "Safer WiFi"],
+    "answer": "Malware stealing OTPs"
+  },
+  {
+    "id": 18,
+    "question": "What is a safe practice online?",
+    "options": ["Not downloading unknown APKs", "Trust all links", "Sharing OTPs", "Installing random apps"],
+    "answer": "Not downloading unknown APKs"
+  },
+  {
+    "id": 19,
+    "question": "Why should you check app permissions?",
+    "options": ["To block data theft", "To speed up internet", "To get better games", "To boost health"],
+    "answer": "To block data theft"
+  },
+  {
+    "id": 20,
+    "question": "What is the main message of this quiz?",
+    "options": ["Think before you click/type", "Click everything fast", "Trust all apps", "Data has no value"],
+    "answer": "Think before you click/type"
+  }
+]

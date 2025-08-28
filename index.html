@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outreach Quiz</title>
+  <style>
+    /* ---------- Global Style ---------- */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      background: url('bg.png') no-repeat center center/cover; /* 🔥 Your image here */
+      position: relative;
+      min-height: 100vh;
+    }
+
+    /* Overlay for better text contrast */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: -1;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      border-bottom: 2px solid #00ffcc;
+    }
+
+    .logo {
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    /* ---------- Title ---------- */
+    h1 {
+      font-size: 2.5em;
+      margin-top: 40px;
+      animation: neon 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon {
+      from { text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc; }
+    }
+
+    /* ---------- Quiz Container ---------- */
+    #quiz-container {
+      margin: 50px auto;
+      width: 85%;
+      max-width: 650px;
+      background: rgba(20, 20, 20, 0.9);
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px #00ffcc;
+      display: none;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    #question {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    /* ---------- Buttons ---------- */
+    button {
+      margin: 10px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00ffcc, #0066ff);
+      color: #000;
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.8);
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    #options button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    /* ---------- Popups (+1 or 0) ---------- */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      font-weight: bold;
+      animation: fadeUp 1s ease forwards;
+      z-index: 1000;
+    }
+
+    .popup.correct { color: #00ffcc; text-shadow: 0 0 15px #00ffcc; }
+    .popup.wrong { color: #ff4444; text-shadow: 0 0 15px #ff0000; }
+
+    @keyframes fadeUp {
+      0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+      100% { opacity: 0; transform: translate(-50%, -70%) scale(1.4); }
+    }
+
+    /* ---------- Result ---------- */
+    #result {
+      margin-top: 50px;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #00ffcc;
+      width: 70%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Nitte.png" class="logo" alt="Left Logo">
+    <h2>Outreach Quiz</h2>
+    <div>
+      <img src="logo2.png" class="logo" alt="Right Logo 1">
+      <img src="logo1.png" class="logo" alt="Right Logo 2">
+    </div>
+  </header>
+
+  <h1>⚡ Think Before You Click 🔒</h1>
+  <button id="start-btn">Start Quiz</button>
+
+  <div id="quiz-container">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button id="next-btn" style="display:none;">Next</button>
+    <button id="end-btn" style="display:none;">End Quiz</button>
+  </div>
+
+  <div id="result" style="display:none;">
+    <h2>🎉 Thank You for Playing!</h2>
+    <p id="score"></p>
+    <p id="correct"></p>
+    <p id="wrong"></p>
+    <button onclick="restartQuiz()">Restart Quiz</button>
+  </div>
+  <script>
+  let questions = [];
+  let currentQuestion = 0;
+  let score = 0;
+  let correctAnswers = 0;
+  let wrongAnswers = 0;
+
+  async function loadQuestions() {
+    const response = await fetch("questions.json");
+    questions = await response.json();
+  }
+
+  function startQuiz() {
+    document.getElementById("start-btn").style.display = "none";
+    document.getElementById("quiz-container").style.display = "block";
+    currentQuestion = 0;
+    score = 0;
+    correctAnswers = 0;
+    wrongAnswers = 0;
+    showQuestion();
+  }
+
+  function showQuestion() {
+    let q = questions[currentQuestion];
+    document.getElementById("question").textContent = q.question;
+
+    let optionsDiv = document.getElementById("options");
+    optionsDiv.innerHTML = "";
+
+    q.options.forEach(option => {
+      let btn = document.createElement("button");
+      btn.textContent = option;
+      btn.className = "option-btn";
+      btn.onclick = () => selectAnswer(option, q.answer, btn);
+      optionsDiv.appendChild(btn);
+    });
+
+    document.getElementById("next-btn").style.display = "none";
+    document.getElementById("end-btn").style.display =
+      currentQuestion === questions.length - 1 ? "block" : "none";
+  }
+
+  function selectAnswer(selected, correct, button) {
+    let popup = document.createElement("div");
+    popup.classList.add("popup");
+
+    if (selected === correct) {
+      button.style.backgroundColor = "green"; // ✅ Correct one
+      button.style.color = "white";
+      popup.textContent = "+1";
+      popup.classList.add("correct");
+      score++;
+      correctAnswers++;
+    } else {
+      button.style.backgroundColor = "red"; // ❌ Wrong clicked one
+      button.style.color = "white";
+      popup.textContent = "0";
+      popup.classList.add("wrong");
+      wrongAnswers++;
+
+      // highlight the correct one in green
+      document.querySelectorAll("#options button").forEach(btn => {
+        if (btn.textContent === correct) {
+          btn.style.backgroundColor = "green";
+          btn.style.color = "white";
+        }
+      });
+    }
+
+    document.body.appendChild(popup);
+    setTimeout(() => popup.remove(), 1000);
+
+    // disable all after one choice
+    document.querySelectorAll("#options button").forEach(btn => (btn.disabled = true));
+    document.getElementById("next-btn").style.display = "block";
+  }
+
+  function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      showQuestion();
+    } else {
+      endQuiz();
+    }
+  }
+
+  function endQuiz() {
+    document.getElementById("quiz-container").style.display = "none";
+    document.getElementById("result").style.display = "block";
+    document.getElementById("score").textContent = "Total Score: " + score;
+    document.getElementById("correct").textContent = "Correct Answers: " + correctAnswers;
+    document.getElementById("wrong").textContent = "Wrong Answers: " + wrongAnswers;
+  }
+
+  function restartQuiz() {
+    document.getElementById("result").style.display = "none";
+    document.getElementById("start-btn").style.display = "block";
+  }
+
+  document.getElementById("start-btn").addEventListener("click", startQuiz);
+  document.getElementById("next-btn").addEventListener("click", nextQuestion);
+  document.getElementById("end-btn").addEventListener("click", endQuiz);
+
+  loadQuestions();
+</script>
+
+</body>
+</html>
