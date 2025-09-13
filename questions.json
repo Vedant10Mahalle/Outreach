@@ -1,142 +1,142 @@
 [
   {
     "id": 1,
-    "question": "What does AI stand for?",
-    "options": ["Artificial Intelligence", "Automated Interface", "Adaptive Integration", "Advanced Invention"],
+    "question": "What does AI mean?",
+    "options": ["Artificial Intelligence", "Automatic Interface", "Adaptive Integration", "Advanced Invention"],
     "answer": "Artificial Intelligence"
   },
   {
     "id": 2,
-    "question": "Which layer of the internet is directly indexed by common search engines?",
-    "options": ["Surface Web", "Deep Web", "Dark Web", "Encrypted Layer"],
+    "question": "Which part of the internet is shown on Google and other search engines?",
+    "options": ["Surface Web", "Deep Web", "Dark Web", "Hidden Layer"],
     "answer": "Surface Web"
   },
   {
     "id": 3,
-    "question": "The TOR network, initially developed by the U.S. Navy, primarily achieves which of the following?",
-    "options": ["End-to-end encryption", "Anonymity through layered routing", "Free cloud storage", "Data compression for speed"],
-    "answer": "Anonymity through layered routing"
+    "question": "The TOR network, first made by the U.S. Navy, is mainly used for what?",
+    "options": ["End-to-end encryption", "Staying anonymous online", "Free cloud storage", "Speeding up the internet"],
+    "answer": "Staying anonymous online"
   },
   {
     "id": 4,
-    "question": "Which of these best illustrates an AI-driven cybercrime on the Dark Web?",
-    "options": ["AI-generated deepfake ransom videos", "Using VPN for secure browsing", "Changing passwords regularly", "Installing antivirus software"],
-    "answer": "AI-generated deepfake ransom videos"
+    "question": "Which is an example of AI crime on the Dark Web?",
+    "options": ["AI-made fake ransom videos", "Using VPN safely", "Changing passwords often", "Installing antivirus"],
+    "answer": "AI-made fake ransom videos"
   },
   {
     "id": 5,
-    "question": "Which of the following types of data is most frequently traded on the Dark Web?",
-    "options": ["Bank logins and PII", "Public weather records", "Open-source code snippets", "Digital textbooks"],
-    "answer": "Bank logins and PII"
+    "question": "What type of information is mostly sold on the Dark Web?",
+    "options": ["Bank details and personal data", "Weather reports", "Free code", "Online books"],
+    "answer": "Bank details and personal data"
   },
   {
     "id": 6,
-    "question": "Phishing in the AI era differs from traditional phishing mainly due to its:",
+    "question": "How is AI phishing different from normal phishing?",
     "options": [
-      "Ability to produce highly targeted, human-like content",
-      "Use of QR codes instead of emails",
-      "Inability to bypass spam filters",
-      "Dependence on physical presence"
+      "It makes very real-looking and targeted messages",
+      "It uses QR codes instead of emails",
+      "It cannot go past spam filters",
+      "It needs someone face-to-face"
     ],
-    "answer": "Ability to produce highly targeted, human-like content"
+    "answer": "It makes very real-looking and targeted messages"
   },
   {
     "id": 7,
-    "question": "Which mechanism in online gambling exploits the psychological tendency to continue playing after losses?",
+    "question": "Which trick in online gambling makes people keep playing even after losing?",
     "options": [
       "Random Number Generators",
       "Near-Win Effect",
-      "Multi-Factor Authentication",
+      "Two-Step Security",
       "Data Encryption"
     ],
     "answer": "Near-Win Effect"
   },
   {
     "id": 8,
-    "question": "A legitimate reason someone might use the Dark Web is:",
+    "question": "Which is a good reason to use the Dark Web?",
     "options": [
-      "Conducting illegal trade of weapons",
-      "Publishing whistleblower documents securely",
-      "Spreading ransomware",
+      "Selling illegal weapons",
+      "Sharing secret news safely",
+      "Spreading computer viruses",
       "Selling fake IDs"
     ],
-    "answer": "Publishing whistleblower documents securely"
+    "answer": "Sharing secret news safely"
   },
   {
     "id": 9,
-    "question": "To counter AI-enhanced phishing attempts, which strategy is most effective?",
+    "question": "What is the best way to stop AI-based phishing scams?",
     "options": [
-      "Multi-Factor Authentication combined with user education",
-      "Clicking only on emails from unknown senders",
-      "Using identical passwords across platforms",
-      "Disabling updates on security software"
+      "Use Two-Step Security and learn about scams",
+      "Click only on unknown emails",
+      "Use the same password everywhere",
+      "Turn off security updates"
     ],
-    "answer": "Multi-Factor Authentication combined with user education"
+    "answer": "Use Two-Step Security and learn about scams"
   },
   {
     "id": 10,
-    "question": "Which feature of AI phishing makes it especially difficult to detect?",
+    "question": "Why is AI phishing harder to find?",
     "options": [
-      "Automated creation of personalized content at scale",
-      "Reliance on outdated email systems",
-      "Blocking malware signatures",
-      "Use of only non-digital channels"
+      "It makes huge amounts of personal-looking messages quickly",
+      "It uses old email systems",
+      "It blocks viruses",
+      "It works only offline"
     ],
-    "answer": "Automated creation of personalized content at scale"
+    "answer": "It makes huge amounts of personal-looking messages quickly"
   },
   {
     "id": 11,
-    "question": "The phrase ‘If it’s free, you’re the product’ in AI apps highlights which risk?",
+    "question": "The saying ‘If it’s free, you’re the product’ means what risk with AI apps?",
     "options": [
-      "User data monetization",
-      "Unlimited free storage",
-      "Open-source transparency",
-      "Faster download speeds"
+      "They sell your personal data",
+      "They give unlimited free space",
+      "They are open-source",
+      "They are faster to download"
     ],
-    "answer": "User data monetization"
+    "answer": "They sell your personal data"
   },
   {
     "id": 12,
-    "question": "Samsung’s 2023 ban on generative AI came after which type of incident?",
+    "question": "Samsung stopped using AI tools in 2023 after what happened?",
     "options": [
-      "Employees leaking sensitive code and documents via AI tools",
-      "A major ransomware attack",
-      "Physical server destruction",
-      "Loss of financial data from a stock scam"
+      "Staff sent secret company code to AI tools",
+      "A big ransomware attack",
+      "Their servers broke",
+      "Loss of money in a scam"
     ],
-    "answer": "Employees leaking sensitive code and documents via AI tools"
+    "answer": "Staff sent secret company code to AI tools"
   },
   {
     "id": 13,
-    "question": "Games of skill differ from games of chance primarily because:",
+    "question": "Games of skill are different from games of chance because:",
     "options": [
-      "Outcomes rely on the player’s ability, not randomness",
-      "They can never be played online",
-      "They do not require registration",
-      "They are always government sponsored"
+      "Skill games depend on your ability, not luck",
+      "Skill games can’t be online",
+      "Skill games need no signup",
+      "Skill games are government-owned"
     ],
-    "answer": "Outcomes rely on the player’s ability, not randomness"
+    "answer": "Skill games depend on your ability, not luck"
   },
   {
     "id": 14,
-    "question": "Which of these is a *direct* mental health impact linked to online gambling?",
+    "question": "Which is a direct mental health problem from online gambling?",
     "options": [
-      "Stress and depression from financial losses",
-      "Enhanced concentration due to practice",
-      "Improved logical thinking",
-      "Guaranteed financial independence"
+      "Stress and sadness from losing money",
+      "Better focus from practice",
+      "Better thinking skills",
+      "Guaranteed easy money"
     ],
-    "answer": "Stress and depression from financial losses"
+    "answer": "Stress and sadness from losing money"
   },
   {
     "id": 15,
-    "question": "When using AI apps, which step most effectively minimizes the risk of identity theft?",
+    "question": "When using AI apps, what is the best way to stop identity theft?",
     "options": [
-      "Never uploading sensitive or personal information",
-      "Granting all permissions requested",
-      "Using the same login credentials everywhere",
-      "Turning off two-factor authentication"
+      "Don’t upload private or sensitive details",
+      "Allow all permissions",
+      "Use the same password for all accounts",
+      "Turn off two-step security"
     ],
-    "answer": "Never uploading sensitive or personal information"
+    "answer": "Don’t upload private or sensitive details"
   }
 ]
