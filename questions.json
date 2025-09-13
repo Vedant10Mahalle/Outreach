@@ -2,121 +2,141 @@
   {
     "id": 1,
     "question": "What does AI stand for?",
-    "options": ["Artificial Intelligence", "Automatic Input", "Advanced Internet", "Active Innovation"],
+    "options": ["Artificial Intelligence", "Automated Interface", "Adaptive Integration", "Advanced Invention"],
     "answer": "Artificial Intelligence"
   },
   {
     "id": 2,
-    "question": "Which of these is an AI chat tool?",
-    "options": ["Siri", "Alexa", "ChatGPT", "All of the above"],
-    "answer": "All of the above"
+    "question": "Which layer of the internet is directly indexed by common search engines?",
+    "options": ["Surface Web", "Deep Web", "Dark Web", "Encrypted Layer"],
+    "answer": "Surface Web"
   },
   {
     "id": 3,
-    "question": "What is the hidden cost of using free AI tools?",
-    "options": ["Your data", "Extra money", "No risks", "More ads"],
-    "answer": "Your data"
+    "question": "The TOR network, initially developed by the U.S. Navy, primarily achieves which of the following?",
+    "options": ["End-to-end encryption", "Anonymity through layered routing", "Free cloud storage", "Data compression for speed"],
+    "answer": "Anonymity through layered routing"
   },
   {
     "id": 4,
-    "question": "What happened in Samsung’s AI data leak case?",
-    "options": ["They leaked internal code via ChatGPT", "They lost phones", "They hacked Google", "They deleted servers"],
-    "answer": "They leaked internal code via ChatGPT"
+    "question": "Which of these best illustrates an AI-driven cybercrime on the Dark Web?",
+    "options": ["AI-generated deepfake ransom videos", "Using VPN for secure browsing", "Changing passwords regularly", "Installing antivirus software"],
+    "answer": "AI-generated deepfake ransom videos"
   },
   {
     "id": 5,
-    "question": "Which of these is stored as data in AI tools?",
-    "options": ["Chats", "Notes", "Images", "All of the above"],
-    "answer": "All of the above"
+    "question": "Which of the following types of data is most frequently traded on the Dark Web?",
+    "options": ["Bank logins and PII", "Public weather records", "Open-source code snippets", "Digital textbooks"],
+    "answer": "Bank logins and PII"
   },
   {
     "id": 6,
-    "question": "Deepfakes are mainly used to:",
-    "options": ["Create fake videos/images", "Improve eyesight", "Enhance battery life", "Fix devices"],
-    "answer": "Create fake videos/images"
+    "question": "Phishing in the AI era differs from traditional phishing mainly due to its:",
+    "options": [
+      "Ability to produce highly targeted, human-like content",
+      "Use of QR codes instead of emails",
+      "Inability to bypass spam filters",
+      "Dependence on physical presence"
+    ],
+    "answer": "Ability to produce highly targeted, human-like content"
   },
   {
     "id": 7,
-    "question": "What is phishing?",
-    "options": ["Fishing in a river", "Tricking users into giving details", "Free online shopping", "Sharing memes"],
-    "answer": "Tricking users into giving details"
+    "question": "Which mechanism in online gambling exploits the psychological tendency to continue playing after losses?",
+    "options": [
+      "Random Number Generators",
+      "Near-Win Effect",
+      "Multi-Factor Authentication",
+      "Data Encryption"
+    ],
+    "answer": "Near-Win Effect"
   },
   {
     "id": 8,
-    "question": "Which browser is commonly used to access the Dark Web?",
-    "options": ["Chrome", "Firefox", "TOR", "Safari"],
-    "answer": "TOR"
+    "question": "A legitimate reason someone might use the Dark Web is:",
+    "options": [
+      "Conducting illegal trade of weapons",
+      "Publishing whistleblower documents securely",
+      "Spreading ransomware",
+      "Selling fake IDs"
+    ],
+    "answer": "Publishing whistleblower documents securely"
   },
   {
     "id": 9,
-    "question": "Why was the TOR network originally developed?",
-    "options": ["For online gaming", "For military communication", "For e-commerce", "For AI experiments"],
-    "answer": "For military communication"
+    "question": "To counter AI-enhanced phishing attempts, which strategy is most effective?",
+    "options": [
+      "Multi-Factor Authentication combined with user education",
+      "Clicking only on emails from unknown senders",
+      "Using identical passwords across platforms",
+      "Disabling updates on security software"
+    ],
+    "answer": "Multi-Factor Authentication combined with user education"
   },
   {
     "id": 10,
-    "question": "Which of these is an example of a Dark Web marketplace?",
-    "options": ["Amazon", "Silk Road", "Flipkart", "eBay"],
-    "answer": "Silk Road"
+    "question": "Which feature of AI phishing makes it especially difficult to detect?",
+    "options": [
+      "Automated creation of personalized content at scale",
+      "Reliance on outdated email systems",
+      "Blocking malware signatures",
+      "Use of only non-digital channels"
+    ],
+    "answer": "Automated creation of personalized content at scale"
   },
   {
     "id": 11,
-    "question": "What type of scams can deepfakes be used for?",
-    "options": ["Weather updates", "Fitness training", "Ransom calls", "Shopping discounts"],
-    "answer": "Ransom calls"
+    "question": "The phrase ‘If it’s free, you’re the product’ in AI apps highlights which risk?",
+    "options": [
+      "User data monetization",
+      "Unlimited free storage",
+      "Open-source transparency",
+      "Faster download speeds"
+    ],
+    "answer": "User data monetization"
   },
   {
     "id": 12,
-    "question": "What is online gambling mainly about?",
-    "options": ["Betting on sports/games", "Watching cricket", "Studying online", "Shopping"],
-    "answer": "Betting on sports/games"
+    "question": "Samsung’s 2023 ban on generative AI came after which type of incident?",
+    "options": [
+      "Employees leaking sensitive code and documents via AI tools",
+      "A major ransomware attack",
+      "Physical server destruction",
+      "Loss of financial data from a stock scam"
+    ],
+    "answer": "Employees leaking sensitive code and documents via AI tools"
   },
   {
     "id": 13,
-    "question": "Why is gambling attractive?",
-    "options": ["Health benefits", "Thrill & easy money illusion", "Free education", "Better jobs"],
-    "answer": "Thrill & easy money illusion"
+    "question": "Games of skill differ from games of chance primarily because:",
+    "options": [
+      "Outcomes rely on the player’s ability, not randomness",
+      "They can never be played online",
+      "They do not require registration",
+      "They are always government sponsored"
+    ],
+    "answer": "Outcomes rely on the player’s ability, not randomness"
   },
   {
     "id": 14,
-    "question": "What is the reality of gambling?",
-    "options": ["Most people win", "Most people lose", "Everyone gets rich", "Government pays"],
-    "answer": "Most people lose"
+    "question": "Which of these is a *direct* mental health impact linked to online gambling?",
+    "options": [
+      "Stress and depression from financial losses",
+      "Enhanced concentration due to practice",
+      "Improved logical thinking",
+      "Guaranteed financial independence"
+    ],
+    "answer": "Stress and depression from financial losses"
   },
   {
     "id": 15,
-    "question": "Which gambling sites are banned in India?",
-    "options": ["Betway, Dafabet, Parimatch, Mahadev Book", "YouTube, WhatsApp", "Netflix, Prime", "Google, Apple"],
-    "answer": "Betway, Dafabet, Parimatch, Mahadev Book"
-  },
-  {
-    "id": 16,
-    "question": "Why were gambling sites banned?",
-    "options": ["Addiction, fraud, money laundering", "Free education", "Health issues", "Better jobs"],
-    "answer": "Addiction, fraud, money laundering"
-  },
-  {
-    "id": 17,
-    "question": "Which cyber risk is linked to gambling apps?",
-    "options": ["Malware stealing OTPs", "Better battery", "Extra health", "Safer WiFi"],
-    "answer": "Malware stealing OTPs"
-  },
-  {
-    "id": 18,
-    "question": "What is a safe practice online?",
-    "options": ["Not downloading unknown APKs", "Trust all links", "Sharing OTPs", "Installing random apps"],
-    "answer": "Not downloading unknown APKs"
-  },
-  {
-    "id": 19,
-    "question": "Why should you check app permissions?",
-    "options": ["To block data theft", "To speed up internet", "To get better games", "To boost health"],
-    "answer": "To block data theft"
-  },
-  {
-    "id": 20,
-    "question": "What is the main message of this quiz?",
-    "options": ["Think before you click/type", "Click everything fast", "Trust all apps", "Data has no value"],
-    "answer": "Think before you click/type"
+    "question": "When using AI apps, which step most effectively minimizes the risk of identity theft?",
+    "options": [
+      "Never uploading sensitive or personal information",
+      "Granting all permissions requested",
+      "Using the same login credentials everywhere",
+      "Turning off two-factor authentication"
+    ],
+    "answer": "Never uploading sensitive or personal information"
   }
 ]

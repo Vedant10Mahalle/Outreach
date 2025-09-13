@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outreach Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     /* ---------- Global Style ---------- */
     body {
@@ -168,14 +170,33 @@
     <button id="end-btn" style="display:none;">End Quiz</button>
   </div>
 
-  <div id="result" style="display:none;">
-    <h2>🎉 Thank You for Playing!</h2>
-    <p id="score"></p>
-    <p id="correct"></p>
-    <p id="wrong"></p>
-    <button onclick="restartQuiz()">Restart Quiz</button>
+  <div id="result" style="display:none; text-align:center;">
+  <h1 style="font-size:3rem; color:#00ffcc; margin-bottom:20px;">
+    🎉 Thank You for Participating! 🎉
+  </h1>
+
+  <!-- Logos Center -->
+  <div style="display:flex; justify-content:center; gap:30px; margin-bottom:30px;">
+    <img src="logo_linkedin.png" alt="LinkedIn Logo" style="width:80px; height:80px;">
+    <img src="logo_instagram.png" alt="Instagram Logo" style="width:80px; height:80px;">
   </div>
-  <script>
+
+  <!-- Social Icons -->
+  <div style="margin-top:20px;">
+    <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" 
+       style="margin:0 15px; text-decoration:none; color:#00ffcc; font-size:1.5rem;">
+       <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://www.instagram.com/YOUR_INSTAGRAM_ID" target="_blank" 
+       style="margin:0 15px; text-decoration:none; color:#ff69b4; font-size:1.5rem;">
+       <i class="fab fa-instagram"></i> Instagram
+    </a>
+  </div>
+
+  <button onclick="restartQuiz()" style="margin-top:40px;">Restart Quiz</button>
+</div>
+
+<script>
   let questions = [];
   let currentQuestion = 0;
   let score = 0;
@@ -261,12 +282,33 @@
     }
   }
 
+  // 🟩 NEW THANK-YOU SCREEN instead of score
   function endQuiz() {
     document.getElementById("quiz-container").style.display = "none";
-    document.getElementById("result").style.display = "block";
-    document.getElementById("score").textContent = "Total Score: " + score;
-    document.getElementById("correct").textContent = "Correct Answers: " + correctAnswers;
-    document.getElementById("wrong").textContent = "Wrong Answers: " + wrongAnswers;
+
+    // Build thank-you content dynamically
+    let resultDiv = document.getElementById("result");
+    resultDiv.style.display = "block";
+    resultDiv.innerHTML = `
+      <h1 style="font-size:3rem; color:#00ffcc; margin-bottom:20px;">
+        🎉 Thank You for Participating! 🎉
+      </h1>
+      <div style="display:flex; justify-content:center; gap:40px; margin:30px 0;">
+        <img src="logo2.png" alt="LinkedIn" style="width:80px; height:80px;">
+        <img src="logo1.png" alt="Instagram" style="width:80px; height:80px;">
+      </div>
+      <div style="margin-top:20px;">
+        <a href="https://www.linkedin.com/company/nss-it-wing-nmamit/posts/?feedView=all" target="_blank" 
+           style="margin:0 15px; text-decoration:none; color:#00ffcc; font-size:1.5rem;">
+           <i class="fab fa-linkedin"></i> NSS IT Wing NMAMIT
+        </a>
+        <a href="https://www.instagram.com/nss_itwing_nmamit/" target="_blank" 
+           style="margin:0 15px; text-decoration:none; color:#ff69b4; font-size:1.5rem;">
+           <i class="fab fa-instagram"></i> nss_itwing_nmamit
+        </a>
+      </div>
+      <button onclick="restartQuiz()" style="margin-top:40px;">Restart Quiz</button>
+    `;
   }
 
   function restartQuiz() {
@@ -280,6 +322,7 @@
 
   loadQuestions();
 </script>
+
 
 </body>
 </html>
